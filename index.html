@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Player</title>
+    <style>
+      body {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        color: white;
+      }
+
+      #audio-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #audio-player {
+        width: 300px;
+        height: auto;
+      }
+
+      #link-button {
+        margin-top: 20px;
+        font-size: 18px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      #link-button:hover {
+        background-color: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="audio-container">
+      <audio controls id="audio-player">
+        <source src="your_audio_file.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <button id="link-button">
+        <a
+          href="https://drive.google.com/drive/folders/1_0_opBkkkJa0P3iamWVuFLtANYHb6UQ0?usp=share_link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Begin</a
+        >
+      </button>
+    </div>
+  </body>
+</html>
